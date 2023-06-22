@@ -1,2 +1,3 @@
 # clearance
-Clearance is a Game Platform that I decided to start building, and my initial intention is to make it only work visually, using a database to store the info about each user's saved game etc.
+Clearance is a Game Platform that only intends to work visually at first.
+If the project goes well, I'll add functionality and game launching, with some other related features.
