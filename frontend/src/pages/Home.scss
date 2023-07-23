@@ -1,0 +1,35 @@
+// -------- Primary Colors -------- //
+$primary: #3172EB;
+$secondary: #CD9732;
+$secondary-accent: #DCB66F;
+$primary-accent: #304873;
+$primary-light-accent: #505D77;
+
+// -------- Body -------- //
+body {
+  width: 100% !important;
+  max-width: 100vw !important;
+  height: 100% !important;
+  max-height: 100vh !important;
+}
+
+// -------- Menu Bar -------- //
+$menu-bar-height: 50px;
+
+#menu-bar {
+  width: 100%;
+  height: $menu-bar-height;
+}
+
+// -------- Game List -------- //
+$game-list-var: 0;
+
+#game-list {
+  width: 100%;
+  height: auto;
+}
+
+.game .title {
+  width: 100%;
+  height: 20%;
+}
