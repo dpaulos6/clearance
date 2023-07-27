@@ -1,35 +1,69 @@
 // -------- Primary Colors -------- //
-$primary: #3172EB;
-$secondary: #CD9732;
-$secondary-accent: #DCB66F;
-$primary-accent: #304873;
-$primary-light-accent: #505D77;
+$text: #fafafa;
+$background: #050505;
+$background-menu: #0b0b0b;
+$primary: #233a7b;
+$secondary: #171c1c;
+$accent: #b0b3b5;
 
 // -------- Body -------- //
-body {
-  width: 100% !important;
-  max-width: 100vw !important;
-  height: 100% !important;
-  max-height: 100vh !important;
+body{
+  background-color: $background;
 }
 
 // -------- Menu Bar -------- //
-$menu-bar-height: 50px;
+$menu-bar-width: 100px;
 
 #menu-bar {
-  width: 100%;
-  height: $menu-bar-height;
-}
+  width: $menu-bar-width;
+  height: 100vh;
+  background-color: $background-menu;
+  justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  border-right: 2px solid #ffffff1a;
 
-// -------- Game List -------- //
-$game-list-var: 0;
+  & div,
+  & a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-#game-list {
-  width: 100%;
-  height: auto;
-}
+    & img{
+      width: 50px;
+      
+      &:hover{
+        cursor: pointer;
+      }
+    }
+  }
 
-.game .title {
-  width: 100%;
-  height: 20%;
+  & .controls{
+    height: auto !important;
+    display: flex;
+    flex-direction: column;
+    gap: .25rem;
+    
+    & .action {
+      width: 100%;
+      height: auto; 
+      padding: 1rem 0;
+      
+      &:hover {
+        border-right: 2px solid #ffffff5a;
+        transform: translateX(2px);
+        cursor: pointer;
+      }
+      
+      &:hover .icon {
+        color: $accent;
+      }
+      
+      & .icon{
+        width: 24px;
+        height: 24px;
+        color: #ffffff5a;
+      }
+    }
+  }
 }
