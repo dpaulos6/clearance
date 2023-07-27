@@ -50,13 +50,13 @@ $menu-bar-width: 100px;
       padding: 1rem 0;
       
       &:hover {
-        border-right: 2px solid #ffffff5a;
+        border-right: 2px solid $primary;
         transform: translateX(2px);
         cursor: pointer;
       }
       
       &:hover .icon {
-        color: $accent;
+        color: $primary;
       }
       
       & .icon{

@@ -10,6 +10,7 @@ import { LuSettings } from 'react-icons/lu'
 export default function Home(){
   return (
     <>
+    <div className='flex flex-row'>
       <section id='menu-bar' className=''>
         <div className='py-5'>
           <img src='./eclipta_svg.png' alt="Eclipta Logo"/>
@@ -38,6 +39,10 @@ export default function Home(){
           <img src='./avatar_pfp.png' alt="User Avatar" className='rounded-full' />
         </div>
       </section>
+      <section className='w-full'>
+
+      </section>
+    </div>
     </>
   );
 }
