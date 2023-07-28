@@ -43,26 +43,32 @@ $menu-bar-width: 100px;
     display: flex;
     flex-direction: column;
     gap: .25rem;
+
+    & .active{
+      box-shadow: 2px 0px 0px 0px $primary;
+      cursor: pointer;
+      
+      & * {
+        color: $primary;
+      }
+    }
     
     & .action {
       width: 100%;
       height: auto; 
       padding: 1rem 0;
+      transition: all 50ms ease-in-out;
       
       &:hover {
-        border-right: 2px solid $primary;
-        transform: translateX(2px);
+        background-color: #ffffff1a;
         cursor: pointer;
-      }
-      
-      &:hover .icon {
-        color: $primary;
       }
       
       & .icon{
         width: 24px;
         height: 24px;
         color: #ffffff5a;
+        transition: all 50ms ease-in-out;
       }
     }
   }
