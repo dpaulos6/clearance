@@ -1,3 +1,6 @@
+// -------- Imports -------- //
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Grotesk:wght@700&display=swap');
+
 // -------- Primary Colors -------- //
 $text: #fafafa;
 $background: #050505;
@@ -9,6 +12,7 @@ $accent: #b0b3b5;
 // -------- Body -------- //
 body{
   background-color: $background;
+  font-family: 'Montserrat', sans-serif;
 }
 
 // -------- Menu Bar -------- //
@@ -69,6 +73,68 @@ $menu-bar-width: 100px;
         height: 24px;
         color: #ffffff5a;
         transition: all 50ms ease-in-out;
+      }
+    }
+  }
+}
+
+#main-content{
+  .top{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 2.5rem;
+    align-items: center;
+
+    .title{
+      display: flex;
+      flex-direction: row;
+      color: #ffffff70;
+      gap: 1.25rem;
+      align-items: baseline;
+      margin-left: 6rem;
+      
+      h2 {
+        font-size: larger;
+        font-weight: 600;
+        text-transform: uppercase;
+      }
+
+      p{
+        color: #ffffff50;
+      }
+    }
+
+    .search{
+      display: flex;
+      flex-direction: row;
+      margin-right: 3rem;
+      align-items: center;
+
+      input {
+        width: 300px;
+        height: 35px;
+        padding: 1.3rem 1.25rem;
+        font-size: small;
+        color: $text;
+        background: #ffffff0a;
+        border-radius: .35rem;
+
+        &:focus {
+          border: none;
+          outline: none;
+        }
+
+        &::placeholder{
+          color: #ffffff70;
+        }
+      }
+
+      .icon { 
+        width: 24px;
+        height: 24px;
+        color: #ffffff70;
+        margin-left: -2.25rem;
       }
     }
   }
