@@ -13,8 +13,8 @@ import SideMenu from '../components/SideMenu.js';
 
 export default function Home(){
 
-  function randomNumber() {
-    return Math.floor(Math.random() * 10)
+  function randomNumber(int) {
+    return Math.floor(Math.random() * int)
   }
 
   return (
@@ -27,7 +27,7 @@ export default function Home(){
         <div className='top'>
           <span className='title'>
             <h2>Your Library</h2>
-            <p>{randomNumber()}</p>
+            <p>{randomNumber(10)}</p>
           </span>
           <div class="search">
             <input placeholder="Search your library"/>
@@ -35,7 +35,17 @@ export default function Home(){
           </div>
         </div>
         <div className='middle'>
-          
+          <h1 className='game-title'>Apex Legends</h1>
+          <div className='game-stats'>
+            <div className='playtime'>
+              <p className='playtime-label'>Play Time</p>
+              <p className='playtime-info'>{randomNumber(10000)} hours</p>
+            </div>
+            <div className='achievements'>
+              <p className='achievements-label'>Achievements</p>
+              <p className='achievements-info'>{randomNumber(100)}%</p>
+            </div>
+          </div>
         </div>
         <div className='bottom'>
           

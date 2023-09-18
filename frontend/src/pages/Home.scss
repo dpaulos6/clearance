@@ -79,11 +79,14 @@ $menu-bar-width: 100px;
 }
 
 #main-content{
+  max-height: 100vh;
+
   .top{
     display: flex;
     flex-direction: row;
+    height: 10%;
     justify-content: space-between;
-    padding-top: 2.5rem;
+    // padding: 2rem 0;
     align-items: center;
 
     .title{
@@ -137,5 +140,43 @@ $menu-bar-width: 100px;
         margin-left: -2.25rem;
       }
     }
+  }
+
+  .middle {
+    display: flex;
+    flex-direction: column;
+    height: 60%;
+    padding: 0 2rem;
+    justify-content: center;
+
+    .game-title {
+      color: $text;
+      font-size: xx-large;
+      margin: 1rem 0;
+    }
+
+    .game-stats{
+      display: flex;
+      flex-direction: row;
+      gap: 8rem;
+      
+
+      .playtime-info, 
+      .achievements-info{
+        color: $text;
+      }
+  
+      .playtime-label,
+      .achievements-label{
+        color: #ffffff70;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: small;
+      }
+    }
+  }
+
+  .bottom{
+    height: 30%;
   }
 }
